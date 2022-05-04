@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Mrichk0.github.io/goit-js-hw-08",
+  "homepage": "https://Mrichk0.github.io/goit-js-hw-09",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mrichk0/goit-js-hw-08.git"
+    "url": "git+https://github.com/Mrichk0/goit-js-hw-09.git"
   },
   "keywords": [],
   "author": "Bohdan Mrichko <zaq4769@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mrichk0/goit-js-hw-08/issues"
+    "url": "https://github.com/Mrichk0/goit-js-hw-09/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
