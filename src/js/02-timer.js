@@ -36,14 +36,18 @@ function addLeadingZero(value) {
 
 flatpickr('#datetime-picker', options);
 
+function setClock(days, hours, minutes, seconds) {
+  daysSpan.innerHTML = addLeadingZero(days);
+  hoursSpan.innerHTML = addLeadingZero(hours);
+  minutesSpan.innerHTML = addLeadingZero(minutes);
+  secondsSpan.innerHTML = addLeadingZero(seconds);
+}
+
 function onStartClickInit() {
   buttonStart.disabled = true;
   const intervalID = setInterval(() => {
     const { days, hours, minutes, seconds } = convertMs(selectedTime - Date.now());
-    daysSpan.innerHTML = addLeadingZero(days);
-    hoursSpan.innerHTML = addLeadingZero(hours);
-    minutesSpan.innerHTML = addLeadingZero(minutes);
-    secondsSpan.innerHTML = addLeadingZero(seconds);
+    setClock(days, hours, minutes, seconds);
     if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
       clearInterval(intervalID);
     }
@@ -68,5 +72,3 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
-
-Date.now();
